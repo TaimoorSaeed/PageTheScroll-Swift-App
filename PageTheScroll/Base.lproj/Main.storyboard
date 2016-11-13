@@ -31,20 +31,48 @@
                                     <constraint firstAttribute="height" constant="148" id="Ppi-50-jst"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1N7-zx-4YC">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zFm-lX-52N">
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVe-6O-NON">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="251" id="zda-75-WoQ"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="lVe-6O-NON" secondAttribute="bottom" id="BaD-4h-UK9"/>
+                                            <constraint firstItem="lVe-6O-NON" firstAttribute="centerX" secondItem="zFm-lX-52N" secondAttribute="centerX" id="T1X-NP-prz"/>
+                                            <constraint firstItem="lVe-6O-NON" firstAttribute="top" secondItem="zFm-lX-52N" secondAttribute="top" id="rG4-ad-xiA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zFm-lX-52N" secondAttribute="bottom" id="JR1-qR-A19"/>
+                                    <constraint firstItem="zFm-lX-52N" firstAttribute="top" secondItem="1N7-zx-4YC" secondAttribute="top" id="deI-Sp-svd"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JkC-J7-es2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B6K-mm-wN6"/>
+                            <constraint firstItem="1N7-zx-4YC" firstAttribute="top" secondItem="JkC-J7-es2" secondAttribute="top" id="GIJ-JH-dVe"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xG7-b3-gec" secondAttribute="bottom" id="K8z-zd-DeQ"/>
                             <constraint firstAttribute="trailing" secondItem="xG7-b3-gec" secondAttribute="trailing" id="Mlf-rm-fxD"/>
+                            <constraint firstItem="1N7-zx-4YC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="PuN-IT-rj1"/>
                             <constraint firstItem="7cz-5g-Wn8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="dhU-wv-g2g"/>
                             <constraint firstAttribute="trailing" secondItem="JkC-J7-es2" secondAttribute="trailing" id="jDC-7a-00n"/>
+                            <constraint firstItem="1N7-zx-4YC" firstAttribute="leading" secondItem="JkC-J7-es2" secondAttribute="leading" id="qji-WX-LdV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JkC-J7-es2" secondAttribute="bottom" id="vEi-kk-vKK"/>
                             <constraint firstItem="JkC-J7-es2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wXO-to-5Jj"/>
                             <constraint firstItem="xG7-b3-gec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xKj-ah-u1p"/>
                             <constraint firstItem="7cz-5g-Wn8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zbG-Za-afG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="lVe-6O-NON" id="0Sr-1o-idj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
