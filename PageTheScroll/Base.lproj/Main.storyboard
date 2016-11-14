@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,40 +34,24 @@
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1N7-zx-4YC">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zFm-lX-52N">
-                                        <subviews>
-                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVe-6O-NON">
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="251" id="zda-75-WoQ"/>
-                                                </constraints>
-                                            </scrollView>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="lVe-6O-NON" secondAttribute="bottom" id="BaD-4h-UK9"/>
-                                            <constraint firstItem="lVe-6O-NON" firstAttribute="centerX" secondItem="zFm-lX-52N" secondAttribute="centerX" id="T1X-NP-prz"/>
-                                            <constraint firstItem="lVe-6O-NON" firstAttribute="top" secondItem="zFm-lX-52N" secondAttribute="top" id="rG4-ad-xiA"/>
-                                        </constraints>
-                                    </stackView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lVe-6O-NON"/>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="zFm-lX-52N" secondAttribute="bottom" id="JR1-qR-A19"/>
-                                    <constraint firstItem="zFm-lX-52N" firstAttribute="top" secondItem="1N7-zx-4YC" secondAttribute="top" id="deI-Sp-svd"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="JkC-J7-es2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="B6K-mm-wN6"/>
-                            <constraint firstItem="1N7-zx-4YC" firstAttribute="top" secondItem="JkC-J7-es2" secondAttribute="top" id="GIJ-JH-dVe"/>
+                            <constraint firstItem="1N7-zx-4YC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jbg-hn-Sl1"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xG7-b3-gec" secondAttribute="bottom" id="K8z-zd-DeQ"/>
                             <constraint firstAttribute="trailing" secondItem="xG7-b3-gec" secondAttribute="trailing" id="Mlf-rm-fxD"/>
-                            <constraint firstItem="1N7-zx-4YC" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="PuN-IT-rj1"/>
+                            <constraint firstItem="1N7-zx-4YC" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="bqM-TJ-bhN"/>
                             <constraint firstItem="7cz-5g-Wn8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="17" id="dhU-wv-g2g"/>
                             <constraint firstAttribute="trailing" secondItem="JkC-J7-es2" secondAttribute="trailing" id="jDC-7a-00n"/>
-                            <constraint firstItem="1N7-zx-4YC" firstAttribute="leading" secondItem="JkC-J7-es2" secondAttribute="leading" id="qji-WX-LdV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JkC-J7-es2" secondAttribute="bottom" id="vEi-kk-vKK"/>
                             <constraint firstItem="JkC-J7-es2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wXO-to-5Jj"/>
                             <constraint firstItem="xG7-b3-gec" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xKj-ah-u1p"/>
+                            <constraint firstItem="1N7-zx-4YC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yHj-Mn-3Vr"/>
+                            <constraint firstItem="1N7-zx-4YC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="z70-ny-CFI"/>
                             <constraint firstItem="7cz-5g-Wn8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zbG-Za-afG"/>
                         </constraints>
                     </view>
